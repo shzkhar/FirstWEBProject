@@ -71,7 +71,7 @@ public class Registration extends HttpServlet {
 		     else
 		     {
 		    	String alpha1 = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}$";
-		    	if(email.matches(alpha1)==false)
+		    	if(pass.matches(alpha1)==false)
 		    	{
 		    		iserror = true;
 		    		error.append("<br>Please enter Valid Password");
